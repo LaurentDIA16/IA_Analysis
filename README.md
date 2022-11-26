@@ -10,7 +10,7 @@
 - Effectuer les premières migrations, dans le terminal taper : "cd src" puis "python manage.py makemigrations" et "python manage.py migrate"
 
 ## Lancer serveur Django
-- Vérifier que l'environnement virtuel est lancé et que vous êtes bien dans le dossier 'src' : py manage.py runserver
+- Vérifier que l'environnement virtuel est lancé et que vous êtes bien dans le dossier 'src' : "python manage.py runserver"
 
 ## Le projet
 Réalisation d'un proof of concept (PoC) dans le cadre d’un projet de dashboard d’aide à la décision pour un client. J'ai accès à un fichier de données brutes, matérialisant un export depuis les bases de données opérationnelles du client.
