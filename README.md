@@ -1,12 +1,13 @@
 # IA_Analysis
 
+## Sur MacOS
 ## Installation
-- Installer un environnement virtuel : python3 -m venv .env
-- Lancer l'environnement virtuel : source .env/bin/activate
-- Installer les différents packages (Django, ...) : pip install -r requirements.txt
+- Installer un environnement virtuel : "python3 -m venv .env"
+- Lancer l'environnement virtuel : "source .env/bin/activate"
+- Installer les différents packages (Django, ...) : "pip install -r requirements.txt"
 - Créer la base de donnée sur postgres avec les infos disponible dans le fichier settings.py
 - Créer un nouveau login dans postgres avec nom moni et mdp moni, mettre tout les privilèges
-- Effectuer les premières migrations : cd src puis py manage.py makemigrations et py manage.py migrate
+- Effectuer les premières migrations, dans le terminal taper : "cd src" puis "python manage.py makemigrations" et "python manage.py migrate"
 
 ## Lancer serveur Django
 - Vérifier que l'environnement virtuel est lancé et que vous êtes bien dans le dossier 'src' : py manage.py runserver
