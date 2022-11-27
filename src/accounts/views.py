@@ -1,6 +1,7 @@
-from django.shortcuts import render, HttpResponse
+from django.shortcuts import render, HttpResponse, redirect
 from accounts.models import CustomUser
 from django.contrib.auth.forms import UserCreationForm
+from django.contrib import messages
 
 # Create your views here.
 
@@ -18,7 +19,9 @@ def signup(request):
         form = CustomSignupForm(request.POST)
         if form.is_valid():
             form.save()
-            return HttpResponse("Bienvenue!")
+            messages.success(request, ('Utilisateur créé!'))
+            return redirect('home')
+            # return HttpResponse("Bienvenue!")
         else:
             context["errors"] = form.errors
     
