@@ -38,6 +38,8 @@ INSTALLED_APPS = [
     "django.contrib.sessions",
     "django.contrib.messages",
     "django.contrib.staticfiles",
+    "accounts",
+    "dashboard"
 ]
 
 MIDDLEWARE = [
@@ -98,11 +100,13 @@ AUTH_PASSWORD_VALIDATORS = [
 # Internationalization
 # https://docs.djangoproject.com/en/4.1/topics/i18n/
 
-LANGUAGE_CODE = "en-us"
+LANGUAGE_CODE = "fr-fr"
 
 TIME_ZONE = "UTC"
 
 USE_I18N = True
+
+USE_L10N = True
 
 USE_TZ = True
 
@@ -120,3 +124,7 @@ STATICFILES_DIRS = [
 # https://docs.djangoproject.com/en/4.1/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = "django.db.models.BigAutoField"
+
+# ************* Ajouter par Laurent
+AUTH_USER_MODEL = "accounts.CustomUser"
+LOGIN_REDIRECT_URL = "home"
